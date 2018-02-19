@@ -4,9 +4,9 @@
 }
 
 .home {
-  flex: 1;
+  flex: 1 1 200px;
 }
 
 .logout {
-  flex: 1;
+  flex: 10 1 200px;
 }
