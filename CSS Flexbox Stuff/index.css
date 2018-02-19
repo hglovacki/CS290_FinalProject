@@ -5,5 +5,10 @@
 }
 
 .home {
-  margin-right: auto;
+  flex: 2;
+  /*flex-grow, flex-shrink, flex-basis */
+}
+
+.logout {
+  flex: 1;
 }
