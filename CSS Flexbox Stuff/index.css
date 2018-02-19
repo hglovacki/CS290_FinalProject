@@ -1,14 +1,20 @@
 .container {
   border: 5px solid #ffcc5c;
   display: flex;
-  justify-content: flex-end;
+  height: 100%;
+  align-items: center;
+}
+
+
+.logout {
+  align-self: flex-start;
 }
 
 .home {
-  flex: 2;
-  /*flex-grow, flex-shrink, flex-basis */
+  align-self: flex-end;
 }
 
-.logout {
-  flex: 1;
-}
+/* use to center a button in a container:
+display: flex;
+align-items: center;
+justify-content: center;
