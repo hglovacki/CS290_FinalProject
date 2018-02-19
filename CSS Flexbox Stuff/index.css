@@ -3,10 +3,14 @@
   display: flex;
 }
 
-.home {
-  flex: 1 1 200px;
+.item1 {
+  order: -2;
 }
 
-.logout {
-  flex: 10 1 200px;
+.item2 {
+  order: 2;
+}
+
+.item3 {
+  order: 0;
 }
