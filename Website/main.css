@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 10px;
 }
 
+.grid {
+  background-color: blue;
+  height: 100%;
+  display: grid;
+}
+
 nav .container {
   background-color: #ffcc5c;
   height: 100%;
