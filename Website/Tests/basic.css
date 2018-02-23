@@ -91,18 +91,16 @@ html, body {
 }
 
 .screen .content .row1 .column1 {
-  flex: 1 1 auto;
+
+/* think about flex-grow, -shrink, and -basis */
+
+  flex: 2 1 auto;
   background: #02325f;
 }
 
 .screen .content .row1 .column2 {
   flex: 1 1 auto;
   background: #30577c;
-}
-
-.screen .content .row1 .column3 {
-  flex: 1 1 auto;
-  background: #05729b;
 }
 
 /*********** navbar styling ***************************************************/
