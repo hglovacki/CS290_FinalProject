@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -14,18 +15,18 @@ h1, h2, h3, h4, h5, h6, p {
   grid-gap: 3px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 40px auto 40px;
-  grid-template-areas:
-    "h h h h h h h h h h h h"
-    "p p p p c c c c c c c c"
-    "f f f f f f f f f f f f";
+
 }
 
-nav {
-  grid-area: h;
+.navbar {
+  grid-column: 1 / -1;
+
   background-color: #ffcc5c;
   padding: 10px 0 0 0;
   margin: 0;
+}
 
+.navbar nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -33,16 +34,14 @@ nav {
 }
 
 .profilePic {
-  grid-area: p;
-  margin: 0;
-  padding: 0;
 
 }
 
 footer {
-  grid-area: f;
+  grid-column: 1 / -1;
+
   background-color: #ffcc5c;
-  padding: 0 0 10px 0;
+  padding: 10px 0 0 0;
   margin: 0;
 
   display: flex;
