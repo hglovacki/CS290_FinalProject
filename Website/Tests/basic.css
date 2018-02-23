@@ -1,0 +1,74 @@
+/*********** legend ************************************************************
+
+Color Scheme:
+
+(from http://www.color-hex.com/color-palette/55799)
+
+#f4f6f5 Light Grey
+#b1b5b7 Medium Grey
+#05729b Lightest Blue
+#30577c Medium Blue
+#02325f Dark Blue
+
+*******************************************************************************/
+
+/*********** whole page styling  ***********************************************/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  background: #30577c;
+}
+
+/*********** content styling  *************************************************/
+
+.screen .content {
+  flex: 1 1 auto;
+}
+
+/*********** navbar styling ***************************************************/
+
+.navbar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+/*turn this into a button...*/
+                            .navbar > nav > div > a {
+                              color: #b1b5b7;
+                            }
+
+                            .navbar #item1 {
+                              margin-right: auto;
+                            }
+
+                            .navbar .item {
+                              padding-left: 5px;
+                              padding-right: 5px;
+                            }
+
+/********** header & footer styling *******************************************/
+
+.screen header, .screen footer {
+  background-color: #02325f;
+  padding: 10px 0 10px 0;
+  margin: 0;
+
+  flex: 0 1 auto;
+}
+
+/*turn this into a button...*/
+                            .screen > header > div, .screen footer > div{
+                              color: #b1b5b7;
+                              padding-left: 5px;
+                              padding-right: 5px;
+                            }
