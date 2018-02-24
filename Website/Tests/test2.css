@@ -1,1 +1,8 @@
+.screen > .content > .row1 > .column2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #ffeead;
 
+}
