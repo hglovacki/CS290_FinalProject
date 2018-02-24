@@ -1,0 +1,110 @@
+/*********** legend ************************************************************
+
+styles on this page are used on all of the pages on this site.  they may be
+altered by particular .css files (home.css, etc) for particular pages.
+
+.screen is a flexbox that flexes vertically by screen size and encompases all
+elements
+
+.navbar nav is a flexbox, with an element aligned to the left and all the rest
+aligned to the right. it collapses into a hamburger at screen sizes smaller
+than...FIXME
+
+header and footer are flex-items collapse into ... at screen sizes ... FIXME
+
+.content is a flex item that stretches to fill the screen
+
+.row1 and .row2 split the space of .content, and readjust based on screen size.
+
+ ______.screen__________________
+|
+|   ______.header_______________
+|  |   _____.navbar nav_________
+|  |  |
+|  |  |
+|  |  |_________________________
+|  |____________________________
+|
+|   ______.content______________
+|  |   _____.row1_______________
+|  |  |
+|  |  |
+|  |  |_________________________
+|  |   _____.row2_______________
+|  |  |
+|  |  |
+|  |  |_________________________
+|  |____________________________
+|
+|   ______.footer_______________
+|  |
+|  |
+|  |____________________________
+|
+|_______________________________
+
+Color Scheme:
+
+(from http://www.color-hex.com/color-palette/55799)
+
+#f4f6f5 Light Grey
+#b1b5b7 Medium Grey
+#05729b Lightest Blue
+#30577c Medium Blue
+#02325f Dark Blue
+
+*******************************************************************************/
+
+/*********** whole page styling  ***********************************************/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*********** navbar styling ***************************************************/
+
+.navbar nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+/*turn this into a button...*/
+                            .navbar > nav > div > a {
+                              color: #b1b5b7;
+                            }
+
+                            .navbar #item1 {
+                              margin-right: auto;
+                            }
+
+                            .navbar .item {
+                              padding-left: 5px;
+                              padding-right: 5px;
+                            }
+
+/********** header & footer styling *******************************************/
+
+.screen header, .screen footer {
+  background-color: #02325f;
+  padding: 10px 0 10px 0;
+  margin: 0;
+
+  flex: 0 1 auto;
+}
+
+/*turn this into a button...*/
+                            .screen > header > div, .screen footer > div{
+                              color: #b1b5b7;
+                              padding-left: 5px;
+                              padding-right: 5px;
+                            }
