@@ -67,7 +67,6 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #30577c;
 }
 
 /*********** navbar styling ***************************************************/

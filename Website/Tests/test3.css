@@ -9,21 +9,41 @@
 .screen > .content > .container {
   height: 100%;
   display: grid;
-  grid-template-columns: ;
-  grid-template-rows: ;
+  grid-template-columns: 2fr 1fr;
 }
 
 .screen > .content > .container > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
-  color: #ffeead;
+  background: #30577c;
+  padding: 0 20px;
+
 }
 
-.screen > .content > .container > div > img {
+.screen > .content > .container > .profilepic > img {
 
   width: 100%;
   height: auto;
 
+}
+
+.screen > .content > .container > .intro {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  display: flex;
+}
+.screen > .content > .container > .intro > .introtext {
+
+  display: block;
+  text-align: center;
+
+}
+
+.screen > .content > .container > .profilepic {
+  grid-column: 2 / -1;
+}
+
+.screen > .content > .container > .spacer {
+  grid-column: 1 / -1;
 }
