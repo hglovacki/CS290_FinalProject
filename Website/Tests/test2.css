@@ -22,7 +22,9 @@
 
 /* think about flex-grow, -shrink, and -basis */
 
-  flex: 2 1 auto;
+  width: 66%;
+
+  flex: 1 1 auto;
   background: #02325f;
 }
 
