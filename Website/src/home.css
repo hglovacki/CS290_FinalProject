@@ -13,17 +13,18 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 20px auto;
   grid-auto-rows: auto;
+  padding: 0 20px;
 }
 
 .screen > .content > .container > div {
   justify-content: center;
   align-items: center;
   background: #30577c;
-  padding: 0 20px;
 }
 
 .screen > .content > .container > .profilepic {
   display: flex;
+  padding: 0 0 0 10px;
 }
 
 .screen > .content > .container > .profilepic > img {
@@ -36,6 +37,7 @@
   grid-column: 1 / 8;
   grid-row: 2;
   display: flex;
+  padding: 0 10px 0 0;
 }
 
 .screen > .content > .container > .intro > .introtext {
