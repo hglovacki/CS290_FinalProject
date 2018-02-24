@@ -9,6 +9,7 @@
 .screen > .content > .container {
   height: 100%;
   display: grid;
+  grid-auto-flow: row;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 20px auto;
   grid-auto-rows: auto;
@@ -78,4 +79,9 @@
     grid-template-columns: 1fr;
   }
 
+  .screen > .content > .container > .profilepic {
+    grid-column: 1 / -1;
+    display: flex;
+
+  }
 }
