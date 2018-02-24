@@ -1,8 +1,39 @@
-.screen > .content > .row1 > .column2 {
+/*********** content styling  *************************************************/
+
+.screen .content {
+  flex: 1 1 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3em;
-  color: #ffeead;
+  flex-direction: column;
+}
+
+.screen .content .row1 {
+  flex: 1 1 auto;
+  background: #f4f6f5;
+  display: flex;
+  flex-direction: row;
+}
+
+.screen .content .row2 {
+  flex: 2 10 auto;
+  background: #b1b5b7;
+}
+
+.screen .content .row1 .column1 {
+
+/* think about flex-grow, -shrink, and -basis */
+
+  flex: 2 1 auto;
+  background: #02325f;
+}
+
+.screen .content .row1 .column2 {
+  flex: 1 1 auto;
+  background: #30577c;
+}
+
+.screen > .content > .row1 > .column2 > img {
+
+  width: 100%;
+  height: auto;
 
 }
