@@ -1,10 +1,13 @@
-/*********** content styling  *************************************************/
+/*********** bigger screen styling  *******************************************/
+
+/*********** small screen styling  ********************************************/
+
+/*********** content flexbox contains .container grid  ************************/
 
 .screen > .content {
   flex: 1 1 auto;
   flex-direction: column;
   background: #30577c;
-
 }
 
 .screen > .content > .container {
@@ -16,13 +19,18 @@
   padding: 0 20px;
 }
 
+/*********** .container grid elements *****************************************/
+
 .screen > .content > .container > div {
   justify-content: center;
   align-items: center;
   background: #30577c;
 }
 
+/*********** this grid element is a flexbox containing this flex element ******/
+
 .screen > .content > .container > .profilepic {
+  grid-column: 8 / -1;
   display: flex;
   padding: 0 0 0 10px;
 }
@@ -32,6 +40,8 @@
   width: 100%;
   height: auto;
 }
+
+/*********** this grid element is a flexbox containing this flex element ******/
 
 .screen > .content > .container > .intro {
   grid-column: 1 / 8;
@@ -45,13 +55,11 @@
   text-align: center;
 }
 
-.screen > .content > .container > .profilepic {
-  grid-column: 8 / -1;
-}
-
 .screen > .content > .container > .spacer {
   grid-column: 1 / -1;
 }
+
+/*********** this grid element is a flexbox containing these flex elements ****/
 
 .screen > .content > .container > .linkbar {
   grid-column: 1 / -1;
