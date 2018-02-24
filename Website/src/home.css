@@ -3,13 +3,16 @@
 .screen > .content {
   flex: 1 1 auto;
   flex-direction: column;
+  background: #30577c;
+
 }
 
 .screen > .content > .container {
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20px auto auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 20px auto;
+  grid-auto-rows: auto;
 }
 
 .screen > .content > .container > div {
@@ -19,29 +22,44 @@
   padding: 0 20px;
 }
 
-.screen > .content > .container > .profilepic > img {
+.screen > .content > .container > .profilepic {
+  display: flex;
+}
 
+.screen > .content > .container > .profilepic > img {
+  align-items: center;
   width: 100%;
   height: auto;
-
 }
 
 .screen > .content > .container > .intro {
-  grid-column: 1;
+  grid-column: 1 / 8;
   grid-row: 2;
+  display: flex;
 }
 
 .screen > .content > .container > .intro > .introtext {
-
   display: block;
   text-align: center;
-
 }
 
 .screen > .content > .container > .profilepic {
-  grid-column: 2 / -1;
+  grid-column: 8 / -1;
 }
 
 .screen > .content > .container > .spacer {
   grid-column: 1 / -1;
+}
+
+.screen > .content > .container > .linkbar {
+  grid-column: 1 / -1;
+  display: flex;
+  height: 60px;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.screen > .content > .container > .linkbar > .image > img {
+  height: 60px;
+  width: auto;
 }
