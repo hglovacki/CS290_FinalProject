@@ -69,3 +69,13 @@
   height: 60px;
   width: auto;
 }
+
+/*********** small screen styling  ********************************************/
+
+@media screen and (max-width: 500px){
+
+  .screen > .content > .container {
+    grid-template-columns: 1fr;
+  }
+
+}
