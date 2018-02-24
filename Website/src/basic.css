@@ -69,6 +69,13 @@ html, body {
   height: 100%;
 }
 
+.screen > .content {
+  flex: 1 1 auto;
+  flex-direction: column;
+  background: #30577c;
+}
+
+
 /*********** navbar styling ***************************************************/
 
 .navbar nav {

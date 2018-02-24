@@ -1,11 +1,5 @@
 /*********** content flexbox contains .container grid  ************************/
 
-.screen > .content {
-  flex: 1 1 auto;
-  flex-direction: column;
-  background: #30577c;
-}
-
 .screen > .content > .container {
   height: 100%;
   display: grid;
