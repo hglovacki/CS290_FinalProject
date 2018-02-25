@@ -1,0 +1,116 @@
+<html>
+
+<head>
+  <style>
+    .storydiv {
+      height: 182px;
+      width: 355px;
+      padding-left: 175px;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+    }
+
+    #story1 {
+      background: url(http://www.builderau.com.au/i/s/cov/securitychain170110.gif) no-repeat;
+    }
+
+    #story2 {
+      background: url(http://www.builderau.com.au/i/s/cov/browser170110.jpg) no-repeat;
+      display: none;
+    }
+
+    #story3 {
+      background: url(http://www.builderau.com.au/i/s/cov/dotnet170110.gif) no-repeat;
+      display: none;
+    }
+
+    #story4 {
+      background: url(http://www.builderau.com.au/i/s/cov/tools170110.jpg) no-repeat;
+      display: none;
+    }
+
+    .storyDesc {
+      padding-top: 10px;
+      padding-right: 8px;
+      display: block;
+    }
+
+    .fStory {
+      padding-top: 10px;
+      display: block;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    var stor = -1;
+    var maxstor = 3;
+    var timeout = 3500;
+
+    function autorot() {
+      showNext();
+      setTimeout('autorot();', timeout);
+    }
+
+    function rotateDiv(stor){
+      var divs = document.getElementById("storyContainer").getElementsByTagName("div");
+      for (var i=0; i < divs.length; i++ ) {
+        var div = divs[i];
+        if ( (div.id != "")) {
+      if(i != stor){
+              div.style.display = "none";
+      }
+      else{
+        div.style.display = "block";
+      }
+        }
+      }
+    }
+
+    function showNext(){
+    	if(stor < maxstor)
+    		stor++;
+    	else
+    		stor=0;
+      rotateDiv(stor);
+    }
+
+    function stoprot() {
+    	clearTimeout(timeout);
+    }
+
+
+  </script>
+</head>
+  <body onload="autorot()">
+      <div id="storyContainer">
+      <div id="story1" class="storydiv">
+        <a href="http://www.builderau.com.au/program/iis/soa/Protect_IIS_log_files_by_moving_them_to_a_secure_location/0,339028427,339271617,00.htm" class="ched">Secure IIS</a>
+        <span class="storydesc">
+  	   Log files are essential to reconstruct events before an IIS Web server failure. Learn how to protect your log files with this tip.</span>
+        <span class="fstory"><a href="http://www.cnet.com.au/software/security/0,39029558,40058242,00.htm">Full story</a></span>
+      </div>
+      <div id="story2" class="storydiv">
+        <a href="http://www.builderau.com.au/program/html/soa/Microformats_and_Mapping/0,339028420,339271486,00.htm" class="ched">User Group Mash</a>
+        <span class="storydesc">
+  	   Find an Aussie user group near you with our new Google maps interface.</span>
+        <span class="fstory"><a href="http://www.builderau.com.au/program/html/soa/Microformats_and_Mapping/0,339028420,339271486,00.htm">Full story</a></span>
+      </div>
+      <div id="story3" class="storydiv">
+        <a href="http://www.builderau.com.au/program/dotnet/soa/Quick_Start_guide_to_Microsoft_NET_development/0,339028399,339271495,00.htm" class="ched">.NET 101</a>
+        <span class="storydesc">
+  	   Learn how the .NET Framework works and the tools you'll need to get up and running in this quick start guide.</span>
+        <span class="fstory"><a href="http://www.builderau.com.au/program/dotnet/soa/Quick_Start_guide_to_Microsoft_NET_development/0,339028399,339271495,00.htm">Full story</a></span>
+      </div>
+      <div id="story4" class="storydiv">
+        <a href="http://www.builderau.com.au/program/css/soa/Understanding_the_CSS_box_model/0,39028392,39269220,00.htm" class="ched">Understand CSS</a>
+        <span class="storydesc">
+  	   Before diving into CSS learn<br/>some of the core drivers and concepts.</span>
+
+        <span class="fstory"><a href="http://www.builderau.com.au/program/css/soa/Understanding_the_CSS_box_model/0,39028392,39269220,00.htm">Full story</a></span>
+      </div>
+
+    </div>
+  </body>
+</html>

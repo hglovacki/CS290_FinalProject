@@ -13,3 +13,5 @@ Docs contains files needed for CS290 planning; .pdfs are turned-in versions.
 Test2 sort of works as a .content Flexbox
 
 Test3 will try and turn it into a grid
+
+Test4 develops a pure javascript carousel from https://www.techrepublic.com/article/build-a-carousel-with-javascript/
