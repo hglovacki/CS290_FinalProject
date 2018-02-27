@@ -1,51 +1,34 @@
-.storydiv {
+.carItem {
   height: 182px;
   width: 355px;
-  padding-left: 175px;
   top: 0px;
   left: 0px;
-  position: absolute;
 }
 
-#story1 {
-  background: url(http://www.builderau.com.au/i/s/cov/securitychain170110.gif) no-repeat;
+#item1 {
+  background: url(img/topos/kleinblue.jpg);
 }
 
-#story2 {
-  background: url(http://www.builderau.com.au/i/s/cov/browser170110.jpg) no-repeat;
+#item2 {
+  background: url(img/topos/kleinblue.jpg);
   display: none;
 }
 
-#story3 {
-  background: url(http://www.builderau.com.au/i/s/cov/dotnet170110.gif) no-repeat;
+#item3 {
+  background: url(img/topos/kleinblue.jpg);
   display: none;
 }
 
-#story4 {
-  background: url(http://www.builderau.com.au/i/s/cov/tools170110.jpg) no-repeat;
+#item4 {
+  background: url(img/topos/kleinblue.jpg);
   display: none;
-}
-
-.storyDesc {
-  padding-top: 10px;
-  padding-right: 8px;
-  display: block;
-}
-
-.fStory {
-  padding-top: 10px;
-  display: block;
-  font-weight: bold;
 }
 
 #nav {
-	font-size: 12px;
-	position: absolute;
-	top: 100px;
-	left: 325px;
+	font-size: 24px;
 }
 
-.selStory {
+.selected {
 	background: #eee;
 	border: 1px solid #777;
 }
