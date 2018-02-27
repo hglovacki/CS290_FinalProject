@@ -6,16 +6,15 @@
 
  var stor = -1;
  var maxstor = 3;
- var timeout = 2500;
+ var timeout = 3500;
 
  function autorot() {
    showNext();
    setTimeout('autorot();', timeout);
  }
 
-
  function rotateDiv(stor){
-   var divs = document.getElementById("storyContainer").getElementsByTagName("div");
+   var divs = document.getElementById("carousel").getElementsByTagName("div");
    for (var i=0; i < divs.length; i++ ) {
      var div = divs[i];
      if ( (div.id != "")) {
@@ -28,7 +27,7 @@
       }
    }
 
-     var spans = document.getElementById("nav").getElementsByTagName("span");
+   var spans = document.getElementById("nav").getElementsByTagName("span");
    for (var i=0; i < spans.length; i++ ) {
      var span = spans[i];
      if ( (span.id != "")) {
@@ -62,19 +61,19 @@
  	rotateDiv(stor);
  }
 
- function showStoryOne(){
+ function showOne(){
  	stor=0;
  	rotateDiv(stor);
  }
- function showStoryTwo(){
+ function showTwo(){
  	stor=1;
  	rotateDiv(stor);
  }
- function showStoryThree(){
+ function showThree(){
  	stor=2;
  	rotateDiv(stor);
  }
- function showStoryFour(){
+ function showFour(){
  	stor=3;
  	rotateDiv(stor);
  }
