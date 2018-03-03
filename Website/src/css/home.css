@@ -15,7 +15,7 @@
 .screen > .content > .container > div {
   justify-content: center;
   align-items: center;
-  background: #30577c;
+  background: #b1b5b7;
 }
 
 /*********** this grid element is a flexbox containing this flex element ******/
@@ -30,9 +30,11 @@
   align-items: center;
   width: 100%;
   height: auto;
+  max-height: 512px;
+  max-width: 512px;
 }
 
-/*********** this grid element is a flexbox containing this flex element ******/
+/*********** this grid element is a flexbox containing these flex elements ****/
 
 .screen > .content > .container > .intro {
   grid-column: 1 / 8;
@@ -50,7 +52,7 @@
   grid-column: 1 / -1;
 }
 
-/*********** this grid element is a flexbox containing these flex elements ****/
+/*********** this grid element is a flexbox containing this flex element ******/
 
 .screen > .content > .container > .linkbar {
   grid-column: 1 / -1;
