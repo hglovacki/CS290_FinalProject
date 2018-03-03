@@ -30,8 +30,7 @@
   align-items: center;
   width: 100%;
   height: auto;
-  max-height: 512px;
-  max-width: 512px;
+  max-width: 402;
 }
 
 /*********** this grid element is a flexbox containing these flex elements ****/
