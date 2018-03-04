@@ -73,6 +73,7 @@ html, body {
   flex: 1 1 auto;
   flex-direction: column;
   background: #b1b5b7;
+  height: 100%;
 }
 
 
