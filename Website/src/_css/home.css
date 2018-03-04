@@ -44,7 +44,8 @@
 
 .screen > .content > .container > .intro > .introtext {
   display: block;
-  text-align: center;
+  text-align: justify;
+  width: 303px;
 }
 
 .screen > .content > .container > .spacer {
@@ -57,12 +58,9 @@
   grid-column: 1 / -1;
   display: flex;
   height: 60px;
+  width: auto;
   justify-content: space-evenly;
   padding: 20px 0;
-}
-
-.screen > .content > .container > .image {
-  
 }
 
 /*********** small screen styling  ********************************************/
@@ -77,6 +75,16 @@
   .screen > .content > .container > .profilepic {
     grid-column: 1 / -1;
     display: flex;
+  }
+
+  .screen > .content > .container > .intro > .introtext {
+    display: block;
+    text-align: justify;
+    width: auto;
+  }
+
+  .screen > .content > .container > .image {
+    padding: 3px;
   }
 }
 
