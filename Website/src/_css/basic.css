@@ -67,6 +67,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background: #b1b5b7;
 }
 
 .screen > .content {

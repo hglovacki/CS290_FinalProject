@@ -1,3 +1,7 @@
+.screen > .content {
+  background: #181818;
+}
+
 .screen .content .container {
   display: flex;
   flex-direction: row;
@@ -5,8 +9,12 @@
   justify-content: flex-end;
 }
 
-.screen > .content > .container > .text {
+#blogPost {
   margin-right: auto;
+
+  padding: 10px;
+
+  text-decoration-color: grey;
 }
 
 .screen > .content > .container > iframe {

@@ -33,6 +33,11 @@
   max-width: 402;
 }
 
+#spacer2 {
+  padding: 10px;
+  height: 5px;
+}
+
 /*********** this grid element is a flexbox containing these flex elements ****/
 
 .screen > .content > .container > .intro {
@@ -89,5 +94,3 @@
 }
 
 /**************** misc.  ******************************************************/
-
-#
