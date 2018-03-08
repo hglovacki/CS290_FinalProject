@@ -1,5 +1,5 @@
 .screen > .content {
-  background: #181818;
+  background: #f4f6f5;
 }
 
 .screen .content .container {
@@ -9,12 +9,13 @@
   justify-content: flex-end;
 }
 
-#blogPost {
+.text {
   margin-right: auto;
 
   padding: 10px;
 
-  text-decoration-color: grey;
+  line-height:
+
 }
 
 .screen > .content > .container > iframe {
