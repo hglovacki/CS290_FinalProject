@@ -8,7 +8,7 @@ http://meyerweb.com/eric/tools/css/reset/
    I modified the Fonts only.
 */
 body {
-  background-color: white;
+  background-color: #b1b5b7;
   cursor: default;
   box-sizing: border-box;
 }
@@ -16,7 +16,7 @@ body {
 
 
 html {
-  font-family: sans-serif;
+  font-family: serif;
 
   line-height: 1.15;
 
