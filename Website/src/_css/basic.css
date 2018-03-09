@@ -58,7 +58,6 @@ Color Scheme:
 /*********** whole page styling  ***********************************************/
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -103,7 +102,7 @@ html, body {
 
 /********** header & footer styling *******************************************/
 
-.screen header, .screen footer {
+.screen header {
   background-color: #02325f;
   padding: 10px 0 10px 0;
   margin: 0;
@@ -111,7 +110,7 @@ html, body {
   flex: 0 1 auto;
 }
 
-.screen > header > div, .screen footer > div {
+.screen > header > div {
 
   color: #b1b5b7;
   padding: 10px 0 10px 0;
@@ -124,18 +123,4 @@ html, body {
 
 #itemFoot1 {
   padding: 20px 20px;
-}
-
-
-@media screen and (max-height: 650px) {
-
-  .screen > header > div, .screen footer > div {
-
-    color: #b1b5b7;
-    padding-left: 5px;
-    padding-right: 5px;
-
-    position: absolute;
-
-  }
 }
