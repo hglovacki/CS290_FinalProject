@@ -1,26 +1,39 @@
 .carItem {
-  height: 182px;
-  width: 355px;
+  width: auto;
+  height: 512px;
   top: 0px;
   left: 0px;
 }
 
+#item1, #item2, #item3, #item4 {
+  display: block;
+  margin: 0 auto;
+}
+
 #item1 {
-  background: url(img/topos/kleinblue.jpg);
+  background: url(_img/topos/AnnapolisTopo.jpg);
+  margin: 0 auto;
 }
 
 #item2 {
-  background: url(img/topos/kleinblue.jpg);
+  background: url(_img/topos/GreenfieldTopo.jpg);
   display: none;
+
 }
 
 #item3 {
-  background: url(img/topos/kleinblue.jpg);
+  background: url(_img/topos/LATopo.jpg);
   display: none;
 }
 
 #item4 {
-  background: url(img/topos/kleinblue.jpg);
+  background: url(_img/topos/PhoenixTopo.jpg);
+  display: none;
+  align-items: center;
+}
+
+#item4 {
+  background: url(_img/topos/SantaFeTopo.jpg);
   display: none;
 }
 

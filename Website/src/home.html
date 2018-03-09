@@ -3,7 +3,8 @@
   <head>
     <link rel="stylesheet" href="_css/_normalize.css">
     <link rel="stylesheet" href="_css/basic.css">
-    <link rel="stylesheet" href="_css/home.css">
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" href"home.js"></script>
     <meta charset="utf-8">
     <title>Harlin Glovacki Home</title>
   </head>
@@ -35,8 +36,21 @@
             <img src="_img/ProfilePicture2SizedCropped.jpeg" alt="Profile Picture">
           </div>
           <div class="spacer" id="spacer2"></div>
-          </div>
         </div>
+      </div>
+      <div onload="autorot()" id="carousel">
+        <div id="pict1" class="carItem"></div>
+        <div id="pict2" class="carItem"></div>
+        <div id="pict3" class="carItem"></div>
+        <div id="pict4" class="carItem"></div>
+      </div>
+      <div id="pictNav">
+        <a href="javascript:showPrev()" onClick="stoprot()"><< Prev</a>
+        <span id="nav1"><a href="javascript:showOne()" onClick="stoprot()">1</a></span>
+        <span id="nav2"><a href="javascript:showTwo()" onClick="stoprot()">2</a></span>
+        <span id="nav3"><a href="javascript:showThree()" onClick="stoprot()">3</a></span>
+        <span id="nav4"><a href="javascript:showFour()" onClick="stoprot()">4</a></span>
+        <a href="javascript:showNext()" onClick="stoprot()">Next >></a>
       </div>
       <footer>
         <div class="itemFoot" id="itemFoot1">Content Copyright Harlin Glovacki 2018</div>

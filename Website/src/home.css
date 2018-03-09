@@ -1,3 +1,52 @@
+/*********** carousel styling *************************************************/
+
+.carousel {
+  grid-column: 1 / -1;
+}
+
+.carItem {
+  width: auto;
+  height: 512px;
+  top: 0px;
+  left: 0px;
+}
+
+#pict1 {
+  background: url(_img/topos/AnnapolisTopo.jpg);
+}
+
+#pict2 {
+  background: url(_img/topos/GreenfieldTopo.jpg);
+  display: none;
+
+}
+
+#pict3 {
+  background: url(_img/topos/LATopo.jpg);
+  display: none;
+}
+
+#pict4 {
+  background: url(_img/topos/PhoenixTopo.jpg);
+  display: none;
+}
+
+#pict4 {
+  background: url(_img/topos/SantaFeTopo.jpg);
+  display: none;
+}
+
+#pictNav {
+	font-size: 24px;
+  justify-content: center;
+}
+
+.selected {
+	background: #eee;
+	border: 1px solid #777;
+}
+
+
 /*********** content flexbox contains .container grid  ************************/
 
 .screen > .content > .container {
