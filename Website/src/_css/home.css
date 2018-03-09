@@ -47,9 +47,9 @@
   padding: 0 10px 0 0;
 }
 
-.screen > .content > .container > .intro > .introtext {
+.screen > .content > .container > .intro > div {
   display: block;
-  text-align: justify;
+  text-align: center;
   width: 303px;
 }
 
@@ -84,7 +84,7 @@
 
   .screen > .content > .container > .intro > .introtext {
     display: block;
-    text-align: justify;
+    text-align: center;
     width: auto;
   }
 
