@@ -19,7 +19,7 @@
      var div = divs[i];
      if ( (div.id != "")) {
        	if(i != stor){
-               	div.style.display = "none";
+          div.style.display = "none";
        	}
        	else{
        		div.style.display = "block";
